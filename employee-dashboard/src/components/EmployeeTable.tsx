@@ -25,8 +25,8 @@ const EmployeeTable: React.FC<EmployeeTableProps> = ({ searchQuery }) => {
     <table>
       <thead>
         <tr>
-          <th>Image</th>
-          <th>Name</th>
+          <th>Imagem</th>
+          <th>Nome</th>
           <th>Cargo</th>
           <th>Data de Admissão</th>
           <th>Telefone</th>

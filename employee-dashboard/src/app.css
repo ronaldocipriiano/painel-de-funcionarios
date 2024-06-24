@@ -1,42 +1,124 @@
-#root {
-  max-width: 1280px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+:root {
+  --background-color: #f4f4f4;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --primary-color: #5984C0;
+  --text-color: #333;
+  --white-color: #fff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Roboto, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  background: var(--white-color);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: 1200px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.header {
+  align-items: center;
+  background-color: var(--white-color);
+  border-radius: 10px 10px 0 0;
+  box-shadow: var(--box-shadow);
+  color: var(--text-color);
+  display: flex;
+  margin-top: 20px;
+  padding: 20px 0;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.title {
+  align-items: center;
+  flex: 1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+}
+
+.search-bar {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 10px 15px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 100%;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+td img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header {
+    padding: 10px 0;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .logo {
+    width: 30px;
+    height: 30px;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .title {
+    font-size: 1.2rem;
+  }
 
-.read-the-docs {
-  color: #888;
+  .search-bar {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  td img {
+    height: 40px;
+    width: 40px;
+  }
 }
