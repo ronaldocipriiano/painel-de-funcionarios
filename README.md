@@ -52,7 +52,7 @@ npm run dev
 
 5. Acesse a aplicação no navegador
 
-[Aplicação](http://localhost:3000)
+Confira a porta que a aplicação está rodando, normalmente será na porta 5173 em [http://localhost:5173](http://localhost:5173).
 
 ## Autor
 
